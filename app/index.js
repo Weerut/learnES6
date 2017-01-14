@@ -18,7 +18,11 @@ import myclass from './classes/index';
 import generator from './generators/generators';
 import promisewithgenerator from './generators/promiseWithGenerators';
 
-import maps from './mapsAndSets/maps'
+import maps from './mapsAndSets/maps';
+import sets from './mapsAndSets/sets';
+import spreadOnObject from './beyondES6/spreadOnObject';
+import reactApp from './beyondES6/reactApplication';
+
 
 function modules() {
     singleNamedExports();
@@ -52,7 +56,15 @@ function callGenerator() {
     promisewithgenerator();
 }
 
+function mapsAndSets() {
+    // maps()
+    sets();
+}
 
+function beyondES6() {
+    // spreadOnObject();
+    reactApp();
+}
 
 // modules();
 // newSyntax();
@@ -60,4 +72,5 @@ function callGenerator() {
 // callPromises();
 // callClass();
 // callGenerator();
-maps();
+// mapsAndSets();
+beyondES6();
